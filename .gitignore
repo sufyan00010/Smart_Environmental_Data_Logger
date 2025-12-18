@@ -1,0 +1,36 @@
+# Build files
+build/
+sdkconfig
+sdkconfig.old
+*.pyc
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dependencies
+dependencies.lock
+managed_components/
+
+# Certificate and key files
+*.pem
+*.crt
+*.key
+*.p12
+
+# Binary files
+*.bin
+*.elf
+*.map
+
+# Logs
+*.log

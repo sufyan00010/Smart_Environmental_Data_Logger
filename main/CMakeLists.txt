@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS 
+        "app_main.c"
+        "app_driver.c"
+        "sensor_task.c"
+        "cloud_task.c"
+        "display_task.c"
+        "alert_task.c"
+        "ota_task.c"
+    INCLUDE_DIRS 
+        "."
+    REQUIRES
+        app_wifi
+        esp_rainmaker
+        esp_schedule
+        esp_local_ctrl
+        esp_diagnostics
+        esp_insights
+        dht11
+        ssd1306
+)

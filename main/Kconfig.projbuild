@@ -1,0 +1,59 @@
+menu "Smart Environmental Logger Configuration"
+
+    config ENABLE_SENSOR_DEBUG
+        bool "Enable sensor debug logging"
+        default y
+        help
+            Enable detailed logging for DHT11 and LDR sensors
+
+    config ENABLE_CLOUD_DEBUG
+        bool "Enable cloud debug logging"
+        default y
+        help
+            Enable detailed logging for RainMaker cloud communication
+
+    config DHT11_GPIO
+        int "DHT11 Data GPIO"
+        default 4
+        range 0 21
+        help
+            GPIO pin connected to DHT11 data line (Mapped to Pin D2)
+
+    config LDR_GPIO
+        int "LDR ADC GPIO"
+        default 3
+        range 0 5
+        help
+            GPIO pin connected to LDR via ADC (Mapped to Pin D1 - ADC1_CH3)
+
+    config OLED_SDA_GPIO
+        int "OLED SDA GPIO"
+        default 6
+        range 0 21
+        help
+            GPIO pin for OLED I2C SDA line (Mapped to Pin D4)
+
+    config OLED_SCL_GPIO
+        int "OLED SCL GPIO"
+        default 7
+        range 0 21
+        help
+            GPIO pin for OLED I2C SCL line (Mapped to Pin D5)
+
+    # ... (Keep the rest of your timing/threshold configs the same) ...
+    config SENSOR_READ_INTERVAL_SEC
+        int "Sensor reading interval (seconds)"
+        default 10
+        range 5 60
+
+    config TEMP_HIGH_THRESHOLD
+        int "High temperature alert threshold (°C)"
+        default 35
+        range 25 50
+
+    config TEMP_LOW_THRESHOLD
+        int "Low temperature alert threshold (°C)"
+        default 15
+        range 0 25
+
+endmenu
