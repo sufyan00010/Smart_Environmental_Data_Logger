@@ -516,7 +516,7 @@ MIT License - See LICENSE file for details
 
 **[SUFYAN JAAFAR]**
 - GitHub: [@sufyan00010](https://github.com/sufyan00010)
-- Email: your.email@example.com
+- Email: sufyanjabubakar@gmail.com
 
 ---
 
